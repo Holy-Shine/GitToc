@@ -40,9 +40,9 @@ def detectHeadLines(f):
             # update headline text
             headtext=' '.join(ls[1:-1])
             if ls[-1][-1]=='\n':
-                headtext+=ls[-1][:-1]
+                headtext+=(' '+ls[-1][:-1])
             else:
-                headtext+=ls[-1]
+                headtext+=(' '+ls[-1])
             headid = '{}{}'.format('head',headline_counter)
             headline=ls[0]+' <span id=\"{}\"'.format(headid)+'>'+ headtext+'</span>'+'\n'
             org_str+=headline

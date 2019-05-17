@@ -16,5 +16,4 @@ hello world.
 
 ## Heading level 2.2
 
-# Heading level 3
-
+# Heading

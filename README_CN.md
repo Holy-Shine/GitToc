@@ -17,7 +17,7 @@
 假设你的目标文件名为 `targetFile.md`. 在你的命令行下键入下面命令即可:
 
  ```shell
-> python targetFile.md
+> python gitToc.py targetFile.md
  ```
 
 你会在你的当前目录下获得一个名为 `targetFile_with_toc.md` 的文件
