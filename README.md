@@ -14,13 +14,13 @@ This generated toc supports inner page jumping.
 
 ## Usage
 
-Assuming that your target file's name is `targetFile.md`. Just type this command in your shell:
+Assuming that your target file's name is `targetFile.md`. Just type this command in shell:
 
  ```shell
 > python gitToc.py targetFile.md
  ```
 
-You will get a new markdown file named `targetFile_with_toc.md` in your current directory.  
+You will get a new markdown file named `targetFile_with_toc.md` in current directory.  
 
 
 
