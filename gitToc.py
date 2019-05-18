@@ -22,10 +22,13 @@ def detectHeadLines(f):
     c_status=-1
 
     headline_counter=0
+    iscode=False
     for line in f.readlines():
         line=line.strip(' ')
         ls=line.split(' ')
-        if len(ls)>1 and ls[0] in headline_dic.keys():
+        if(line[:3]=='```'):
+            iscode= not iscode
+        if len(ls)>1 and ls[0] in headline_dic.keys() and not iscode:
             headline_counter+=1
             c_status=headline_dic[ls[0]]
             # find first rank headline
