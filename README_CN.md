@@ -1,3 +1,5 @@
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg"></a> <a href='https://pytorch.org/'><img src='https://img.shields.io/badge/python-3.5-green.svg'></a>
+
 # GitToc
 
 为你的Github仓库的Readme自动生成一个目录
