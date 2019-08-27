@@ -30,6 +30,7 @@ class Application(Frame):
     def _excute_parse(self):
         if self.text.get() == '未选择文件(None selected)':
             messagebox.showwarning('错误(error)','未选择markdown文件！(None markdown file selected)')
+            return
         f = open(self.filename,'r',encoding='utf-8')
         insert_str=self.detectHeadLines(f)
         f.close()
