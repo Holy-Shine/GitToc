@@ -26,4 +26,3 @@ hello world.
 ## <span id="head8">Heading level 2.2</span>
 
 # <span id="head9"> Heading</span>
-
