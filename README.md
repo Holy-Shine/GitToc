@@ -31,3 +31,17 @@ You will get a new markdown file named `targetFile_with_toc.md` in current direc
 - **Windows**
 
   This simple script has been packed into windows PE file(.exe) by [pyinstaller](https://pypi.org/project/PyInstaller/). Now you can click `gitToc.exe` directly and do transformation job in your Windows PC.
+
+
+
+## Online Usage
+
+The author [@lzw5399](https://github.com/lzw5399) made an online conversion tool **TocGenerator** based on GitToc.
+
+TocGenerator Github link: https://github.com/lzw5399/TocGenerator
+
+Online conversion address: http://47.100.220.174:30075/
+
+**Instructions:**
+
+![](online.gif)

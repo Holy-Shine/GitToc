@@ -31,3 +31,22 @@
 - **Windows**
 
   这个脚本已经通过 [pyinstaller](https://pypi.org/project/PyInstaller/) 打包成windows下可用的程序。 现在你可以直接点击 `gitToc.exe` 来完成你的文件转换任务（window机器上）。
+
+
+
+## 在线使用
+
+作者[@lzw5399 ]( https://github.com/lzw5399 )基于GitToc制作了一个在线转换工具**TocGenerator**。
+
+TocGenerator仓库地址： https://github.com/lzw5399/TocGenerator 
+
+在线转换地址：http://47.100.220.174:30075/
+
+**使用方法：**
+
+![](online.gif)
+
+
+
+
+
