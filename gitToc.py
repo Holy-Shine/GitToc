@@ -27,10 +27,10 @@ def detectHeadLines(f):
         if(line[:3]=='```'):
             iscode= not iscode
             
-        # fix code indent bug.
+        # fix code indent bug and fix other indentation bug. 2020/7/3
         if not iscode:
-            line=line.strip(' ')
-        ls=line.split(' ')
+            temp_line=line.strip(' ')
+        ls=temp_line.split(' ')
         if len(ls)>1 and ls[0] in headline_dic.keys() and not iscode:
             headline_counter+=1
             c_status=headline_dic[ls[0]]
