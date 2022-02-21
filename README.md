@@ -30,7 +30,7 @@ You will get a new markdown file named `targetFile_with_toc.md` in current direc
 
 - **Windows**
 
-  This simple script has been packed into windows PE file(.exe) by [pyinstaller](https://pypi.org/project/PyInstaller/). Now you can click `gitToc.exe` directly and do transformation job in your Windows PC.
+  This simple script has been packed into windows PE file(.exe) within [release version](https://github.com/Holy-Shine/GitToc/releases/tag/v1.0.0) by [pyinstaller](https://pypi.org/project/PyInstaller/). Now you can click `gitToc_GUI.exe` directly and do transformation job in your Windows PC.
 
 
 

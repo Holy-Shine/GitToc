@@ -30,7 +30,7 @@
 
 - **Windows**
 
-  这个脚本已经通过 [pyinstaller](https://pypi.org/project/PyInstaller/) 打包成windows下可用的程序。 现在你可以直接点击 `gitToc.exe` 来完成你的文件转换任务（window机器上）。
+  这个脚本已经通过 [pyinstaller](https://pypi.org/project/PyInstaller/) 打包成windows下可用的程序，在[release](https://github.com/Holy-Shine/GitToc/releases/tag/v1.0.0)里。 现在你可以直接点击 `gitToc_GUI.exe` 来完成你的文件转换任务（window机器上）。
 
 
 
