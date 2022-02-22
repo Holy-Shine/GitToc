@@ -103,7 +103,7 @@ class Application(Frame):
         self.btn_excute.pack()
 
     def _excute_parse(self):
-        if self.status_text.get() == self.language_pkg['none_selected']:
+        if self.status_text.get() == self.language_pkg['status_text'] or self.status_text.get()=='':
             messagebox.showwarning(self.language_pkg['error'],self.language_pkg['no_markdown_select'])
             return
         f = open(self.filename,'r',encoding='utf-8')
@@ -113,7 +113,7 @@ class Application(Frame):
             f.write(insert_str)
         
         messagebox.showinfo(self.language_pkg['info'],self.language_pkg['transform_done'])
-        self.status_text.set(self.language_pkg['none_selected'])
+        self.status_text.set(self.language_pkg['status_text'])
             
     def _select_file(self):
         self.filename = filedialog.askopenfilename(title=self.language_pkg['filename_dlg_title'], \
