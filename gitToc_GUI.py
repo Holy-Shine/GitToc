@@ -1,7 +1,11 @@
 from tkinter import Tk, Frame, Button, StringVar, Label, Menu
-
 from tkinter import filedialog, messagebox, IntVar
+
+import base64, os
+import webbrowser
+
 from gitToc import detectHeadLines
+from icon import img
 
 headline_dic={'#':0,'##':1,'###':2,'####':3,'#####':4,'######':5}
 suojin={0:-1,1:-1,2:-1,3:-1,4:-1,5:-1,6:-1}
@@ -68,6 +72,9 @@ class Application(Frame):
         self.menu_bar.entryconfigure(1, label=self.language_pkg['language'])
         self.menu_bar.entryconfigure(2, label=self.language_pkg['about'])
 
+    def openMyHomepage(self):
+        webbrowser.open(url='https://github.com/Holy-Shine')
+        
     def createWidgets(self):
         # self.label = Label(self, text='Add a toc into Markdown File!')
         # self.label.pack()
@@ -86,7 +93,7 @@ class Application(Frame):
         # 关于栏
         self.about_menu = Menu(self.menu_bar, tearoff=False)
         self.menu_bar.add_cascade(label='关于', menu=self.about_menu)
-        self.about_menu.add_checkbutton(label='Author:Holy-Shine@GitHub')
+        self.about_menu.add_radiobutton(label='Author:Holy-Shine@GitHub',command=self.openMyHomepage)
         self.about_menu.add_separator()
 
         self.master.config(menu=self.menu_bar)
@@ -123,6 +130,11 @@ class Application(Frame):
 
 if __name__ == '__main__':
     root = Tk()
+    tmp = open("tmp.ico","wb+")
+    tmp.write(base64.b64decode(img))
+    tmp.close()
+    root.iconbitmap("tmp.ico")
+    os.remove("tmp.ico")
     root.geometry('400x100')
 
     app = Application(master=root)
